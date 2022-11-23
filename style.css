@@ -1,0 +1,258 @@
+/* #################### GERAL ############## */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --text-color: #323238;
+  --bg-card: #E1E1E6;
+  --bg-body: FFFFFFF;
+  --color-page: hsla(240, 6%, 21%, 1);
+}
+
+body  {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--bg-body);
+  color: var(--color-page)
+}
+
+.container {
+  height: 100vh;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 19.2rem;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 6rem;
+}
+/* #################### TIMER ############## */
+
+
+.time span {
+  font-size: 12.7rem;
+  line-height: 14.8rem;
+  color: var(--text-color);
+
+  margin-bottom: 4.8rem;
+}
+
+.timer .button {
+  display: flex;
+  gap: 4rem;
+}
+
+.timer button {
+  background: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+/* #################### SONS ############## */
+
+.sons {
+  display: grid;
+  grid-template-columns: 13.8rem 13.8rem;
+  gap: 3.2rem;
+}
+
+.sons input {
+  width: 80%;
+  margin-top: 3.2rem;
+}
+
+.sons .forestCard {
+  background: var(--bg-card);
+
+  width: 13.8rem;
+  height: 15.2rem;
+
+  border-radius: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+
+.sons .forestCard:hover {
+  background: #02799D;
+  transition: .7s;
+}
+
+.sons .rainCard {
+  background: var(--bg-card);
+
+  width: 13.8rem;
+  height: 15.2rem;
+
+  border-radius: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+.sons .rainCard:hover {
+  background: #02799D;
+  transition: .7s;
+}
+
+.sons .coffeCard {
+  background: var(--bg-card);
+
+  width: 13.8rem;
+  height: 15.2rem;
+
+  border-radius: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+.sons .coffeCard:hover {
+  background: #02799D;
+  transition: .7s;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.sons .fireplaceCard {
+  background: var(--bg-card);
+
+  width: 13.8rem;
+  height: 15.2rem;
+
+  border-radius: 2.4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  cursor: pointer;
+}
+.sons .fireplaceCard:hover {
+  background: #02799D;
+  transition: .7s;
+}
+
+.iconMode {
+  position: absolute;
+  display: flex;
+  padding: 6rem;
+  top: 0;
+  right: 0;
+
+  cursor: pointer;
+}
+
+.iconDarkMode {
+  position: absolute;
+  display: flex;
+  padding: 6rem;
+  top: 0;
+  right: 0;
+
+  cursor: pointer;
+}
+
+/* #################### DARK-MOD ############## */
+
+.dark {
+  background: #121214;
+}
+
+.bi {
+  font-size: 3.6rem;
+  cursor: pointer;
+}
+
+.bi-moon {
+  display: none;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .forestCard, .rainCard{
+  background: #29292E;
+}
+
+.dark .rainCard{
+  background: #29292E;
+}
+
+.dark .coffeCard{
+  background: #29292E;
+}
+
+.dark .fireplaceCard{
+  background: #29292E;
+}
+
+.dark .time span {
+  color: white;
+}
+
+.dark .forestCard svg path {
+  fill: white;
+}
+
+.dark .coffeCard svg path {
+  fill: white;
+}
+
+.dark .fireplaceCard svg path {
+  fill: white;
+}
+
+.dark .play svg path {
+  fill: white;
+}
+
+.dark .stop svg path {
+  fill: white;
+}
+
+.dark .addTime svg path {
+  fill: white;
+}
+
+.dark .lowerTime svg path {
+  fill: white;
+}
+
+.dark .bi-moon {
+  color: white;
+}
